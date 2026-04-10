@@ -29,19 +29,19 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="relative z-10 text-center px-4"
+        className="relative z-10 text-center px-4 -translate-y-24 md:-translate-y-32"
       >
         {showTitle && (
           <motion.h1 
             layoutId="brand-title"
-            className="font-serif text-5xl md:text-8xl lg:text-9xl text-white tracking-[0.2em] leading-none mb-4 uppercase"
+            className="font-serif text-6xl md:text-[80px] text-white tracking-[0.1em] leading-none uppercase"
           >
             RANHELA
           </motion.h1>
         )}
         <motion.p 
-          animate={{ opacity: showTitle ? 0.8 : 0 }}
-          className="font-work text-surface tracking-[0.4em] text-sm md:text-xl uppercase"
+          animate={{ opacity: showTitle ? 0.6 : 0 }}
+          className="font-work text-surface tracking-[0.3em] text-[10px] md:text-xs uppercase mt-4"
         >
           Authentic Sri Lankan Heritage
         </motion.p>

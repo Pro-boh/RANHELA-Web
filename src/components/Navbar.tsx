@@ -49,7 +49,7 @@ export default function Navbar() {
         {showTitle && (
           <motion.span 
             layoutId="brand-title"
-            className="text-xl md:text-2xl font-serif tracking-[0.2em] text-[#5e1c1c] uppercase whitespace-nowrap"
+            className="text-xl md:text-2xl font-serif tracking-[0.1em] text-[#5e1c1c] uppercase whitespace-nowrap"
           >
             RANHELA
           </motion.span>
