@@ -182,16 +182,21 @@ export default function ProductCarousel() {
                     </div>
 
                     <div className="mt-auto flex justify-between items-center gap-2 pt-4 border-t border-zinc-100 group-hover:border-white/10 transition-colors duration-500">
-                      <button 
-                        onClick={() => toggleAddToCart(product.id)}
-                        className={`text-[10px] px-5 py-2 rounded-full font-poppins font-bold tracking-widest uppercase flex items-center justify-center transition-all duration-500 shadow-sm ${
-                          addedItems.includes(product.id) 
-                            ? 'bg-[#c8674b] text-white scale-95' 
-                            : 'bg-primary text-white hover:bg-white hover:text-primary group-hover:bg-white group-hover:text-on-surface'
-                        }`}
-                      >
-                        {addedItems.includes(product.id) ? 'Added' : 'Buy'}
-                      </button>
+                      <div className="flex flex-col gap-2 items-start">
+                        <button 
+                          onClick={() => toggleAddToCart(product.id)}
+                          className={`text-[10px] px-5 py-2 rounded-full font-poppins font-bold tracking-widest uppercase flex items-center justify-center transition-all duration-500 shadow-sm w-full ${
+                            addedItems.includes(product.id) 
+                              ? 'bg-[#c8674b] text-white scale-95' 
+                              : 'bg-primary text-white hover:bg-white hover:text-primary group-hover:bg-white group-hover:text-on-surface'
+                          }`}
+                        >
+                          {addedItems.includes(product.id) ? 'Added' : 'Buy'}
+                        </button>
+                        <button className="text-[10px] px-5 py-2 rounded-full font-poppins font-bold tracking-widest uppercase border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-500 shadow-sm group-hover:border-white group-hover:text-white w-full">
+                          Details
+                        </button>
+                      </div>
 
                       <div className="text-right flex flex-col items-end">
                         <span className={`text-ledger text-base font-bold ${product.accent} group-hover:text-white transition-colors duration-500`}>
