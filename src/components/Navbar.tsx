@@ -15,7 +15,7 @@ export default function Navbar() {
   });
 
   return (
-    <nav className="sticky top-0 w-full z-50 flex items-center px-4 md:px-8 py-4 transition-all duration-500 ghost-shadow border-b bg-primary-container border-primary-container">
+    <nav className="sticky top-0 w-full z-50 flex items-center px-4 md:px-8 py-4 transition-all duration-500 ghost-shadow border-b bg-[#e5ac40] border-[#e5ac40]">
       {/* Left Column: Logo & Links */}
       <div className="flex-1 flex items-center gap-4 md:gap-6">
         <img 

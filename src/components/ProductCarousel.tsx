@@ -33,8 +33,8 @@ const products = [
     price: 12.00,
     tag: "Bestseller",
     image: "https://i.imgur.com/nx95gtA.png",
-    hoverBg: "group-hover:bg-[#c5a059]",
-    accent: "text-[#c5a059]"
+    hoverBg: "group-hover:bg-[#e5ac40]",
+    accent: "text-[#e5ac40]"
   },
   {
     id: 4,
@@ -224,7 +224,7 @@ export default function ProductCarousel() {
               <motion.div
                 animate={{
                   width: activeIndex === index ? 16 : 6,
-                  backgroundColor: activeIndex === index ? '#c5a059' : '#d1c5b4',
+                  backgroundColor: activeIndex === index ? '#e5ac40' : '#d1c5b4',
                 }}
                 className="h-1.5 rounded-full transition-colors duration-300"
               />
