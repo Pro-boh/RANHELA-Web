@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Fraunces:wght@600&family=Work+Sans:wght@300;400;500&family=Poppins:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-fraunces: "Fraunces", serif;
+  --font-work: "Work Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "Courier New", monospace;
+
+  --color-primary: #c5a059;
+  --color-primary-container: #c5a059;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #1b1c1c;
+  
+  --color-secondary: #9f412c;
+  --color-secondary-container: #ff8a70;
+  
+  --color-tertiary: #7b563f;
+  
+  --color-surface: #f5f2e9;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #4e4639;
+  
+  --color-background: #f5f2e9;
+  --color-on-background: #1b1c1c;
+
+  --animate-marquee: marquee 40s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-work;
+  }
+}
+
+@layer utilities {
+  .text-ledger {
+    font-family: "Courier New", monospace;
+    font-style: italic;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .hero-clip {
+    clip-path: inset(0 0 0 0);
+  }
+
+  .ghost-shadow {
+    box-shadow: 0 10px 40px -10px rgba(27, 28, 28, 0.06);
+  }
+}
