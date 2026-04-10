@@ -19,11 +19,10 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img 
           alt="Serene sunrise over Sri Lankan paddy fields" 
-          className="w-full h-full object-cover opacity-95" 
+          className="w-full h-full object-cover opacity-100" 
           src="https://i.imgur.com/X0WNCkg.jpeg"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60"></div>
       </div>
       
       <motion.div 
