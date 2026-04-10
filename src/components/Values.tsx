@@ -33,7 +33,7 @@ export default function Values() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-32 relative overflow-hidden bg-background">
+    <section className="py-16 relative overflow-hidden bg-background">
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center items-center">
           {values.map((value, index) => (

@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export default function Storytelling() {
   return (
-    <section className="py-32 px-4 md:px-8 max-w-7xl mx-auto relative min-h-[80vh] flex flex-col justify-center">
+    <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto relative min-h-[80vh] flex flex-col justify-center">
       <div className="relative w-full">
         {/* Heritage Motif - Repositioned to be inline with content */}
         <motion.div

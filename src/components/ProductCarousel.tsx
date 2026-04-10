@@ -105,7 +105,7 @@ export default function ProductCarousel() {
   };
 
   return (
-    <section className="py-12 relative overflow-hidden bg-background">
+    <section className="py-8 relative overflow-hidden bg-background">
       <div className="px-4 md:px-8 max-w-7xl mx-auto relative">
         <div className="flex justify-between items-end mb-8 px-4">
           <div className="group cursor-default">

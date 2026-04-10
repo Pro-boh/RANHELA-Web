@@ -20,9 +20,9 @@ export default function App() {
         <ProductCarousel />
         <Marquee />
         <Storytelling />
-        <div className="max-w-7xl mx-auto h-px bg-gradient-to-r from-transparent via-on-surface/10 to-transparent my-12"></div>
+        <div className="max-w-7xl mx-auto h-px bg-gradient-to-r from-transparent via-on-surface/10 to-transparent my-6"></div>
         <Values />
-        <div className="max-w-7xl mx-auto h-px bg-gradient-to-r from-transparent via-on-surface/10 to-transparent my-12"></div>
+        <div className="max-w-7xl mx-auto h-px bg-gradient-to-r from-transparent via-on-surface/10 to-transparent my-6"></div>
       </main>
       <Footer />
     </div>

@@ -1,7 +1,19 @@
 import { ShoppingCart, Search, Menu } from 'lucide-react';
-import { motion } from 'motion/react';
+import { motion, useScroll, useMotionValueEvent } from 'motion/react';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const { scrollY } = useScroll();
+  const [showTitle, setShowTitle] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest > 200) {
+      setShowTitle(true);
+    } else {
+      setShowTitle(false);
+    }
+  });
+
   return (
     <nav className="sticky top-0 w-full z-50 flex items-center px-4 md:px-8 py-4 transition-all duration-500 ghost-shadow border-b bg-primary-container border-primary-container">
       {/* Left Column: Logo & Links */}
@@ -33,9 +45,17 @@ export default function Navbar() {
       </div>
 
       {/* Center Column: Brand */}
-      <div className="flex-none px-4">
-        <span className="text-xl md:text-2xl font-serif tracking-[0.2em] text-[#5e1c1c] uppercase whitespace-nowrap">RANHELA</span>
+      <div className="flex-none px-4 min-w-[120px] flex justify-center">
+        {showTitle && (
+          <motion.span 
+            layoutId="brand-title"
+            className="text-xl md:text-2xl font-serif tracking-[0.2em] text-[#5e1c1c] uppercase whitespace-nowrap"
+          >
+            RANHELA
+          </motion.span>
+        )}
       </div>
+
 
       {/* Right Column: Trailing Actions */}
       <div className="flex-1 flex justify-end items-center gap-4 md:gap-6">
