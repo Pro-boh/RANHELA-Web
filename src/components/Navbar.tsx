@@ -21,7 +21,7 @@ export default function Navbar() {
         <img 
           alt="RANHELA LANKA brand crest logo" 
           className="w-8 h-8 md:w-10 md:h-10 object-contain hover:scale-110 transition-transform duration-300" 
-          src="https://lh3.googleusercontent.com/aida/ADBb0uh7k8wm6F4fCVNTp5grYqN83lRj_YVkYfaR_U6K3tjUSeNwhWNRxZObkIITEnY3c8KU5EznDWQywMohRwf1dJY39vr1hQ25R8eGIfbktVah7St9QyTq9FBdWWOrY3xfAul8_1PR1IFqsJ5fv4TdwaM-d912AEVuA1O-9z2-bCK-dWWZ1m71D3j8Cq5zm49AUKVe1BhWoUsWpbVC36dtzpIWzX-2eDTLjlpu2l1qQAuSFn_IYVWg1JaeyXn8me6mg4db8G_17pw-34o"
+          src="https://i.imgur.com/LVX7ayW.jpeg"
           referrerPolicy="no-referrer"
         />
         <div className="hidden md:flex items-center gap-6 lg:gap-8">
